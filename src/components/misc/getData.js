@@ -7,7 +7,7 @@ import {feature} from "topojson";
 const atlasUrl = "https://raw.githubusercontent.com/AliceWi/TopoJSON-Germany/master/germany.json"
 
 // all information about licence etc. https://gist.github.com/Jazzpenner/d0a49655ad9dd7c533c114ad2344fccd
-const migrantsUrl = "https://gist.githubusercontent.com/Jazzpenner/d0a49655ad9dd7c533c114ad2344fccd/raw/1e43cba83b9f1213bbb8d4e681e9abda8c7b5461/rki_hospi_cleaned.csv"
+const rkiUrl = "https://gist.githubusercontent.com/Jazzpenner/d0a49655ad9dd7c533c114ad2344fccd/raw/1e43cba83b9f1213bbb8d4e681e9abda8c7b5461/rki_hospi_cleaned.csv"
 
 
 const rkiRow = d => {
@@ -26,7 +26,7 @@ const getAtlasData = (callback) => {
 }
 
 const getRKIData = (callback) => {
-    csv(migrantsUrl, rkiRow).then(csvData => {
+    csv(rkiUrl, rkiRow).then(csvData => {
         callback(csvData)
     })
 }
