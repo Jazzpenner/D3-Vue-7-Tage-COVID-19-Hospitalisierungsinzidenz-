@@ -3,7 +3,7 @@
   <div class="flex-center" v-else>
     <h1>7-Tage-COVID-19-Hospitalisierungsinzidenz</h1>
     <h2>Datenquelle: <a href="https://github.com/robert-koch-institut/COVID-19-Hospitalisierungen_in_Deutschland">
-      Robert-Koch-Instituts
+      Robert-Koch-Institut
     </a>
       <a href="https://raw.githubusercontent.com/robert-koch-institut/COVID-19-Hospitalisierungen_in_Deutschland/master/LICENSE">
         CC-BY-4.0
